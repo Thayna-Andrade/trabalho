@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cadastrar Novo Problema - Mapeando</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Botão de voltar -->
+  <a href="/Codigo/src/main/resources/public/modulos/Cadastrar Problemas/Inicial.html" class="voltar-btn">← Voltar</a>
+
+  <!-- Cabeçalho -->
+  <header class="cadastro-header">
+    <a href="/Codigo/src/main/resources/public/modulos/Cadastrar Problemas/Inicial.html">
+      <img src="../../IMGS/logo-1.png" alt="Logo do site" class="cadastro-logo">
+    </a>
+    <h1>Cadastrar Novo Problema</h1>
+  </header> 
+
+  <!-- Conteúdo principal -->
+  <main class="cadastro-main">
+    <div class="cadastro-container">
+      <form id="form-problema" class="cadastro-form">
+        <input type="text" name="titulo" placeholder="Título do problema" required />
+        <textarea name="descricao" placeholder="Descreva o problema..." required></textarea>
+        <input type="text" name="Rua" placeholder="Rua..." required />
+        <input type="text" name="Numero" placeholder="Nº..." required />
+        <input type="text" name="Bairro" placeholder="Bairro..." required />
+        <input type="text" name="Cidade" placeholder="Cidade..." required />
+        <input type="text" name="autor" placeholder="Seu nome" required />
+
+        <label for="fotos" class="form-label">Anexar fotos (várias):</label>
+        <input type="file" name="fotos" id="fotos" accept="image/*" multiple />
+
+        <div id="preview-container"></div>
+
+        <button type="submit" class="btn-enviar">Enviar Denúncia</button>
+      </form>
+
+      <p id="msg-sucesso" class="msg-sucesso">Denúncia cadastrada com sucesso!</p>
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="custom-footer">
+    <div class="container text-center">
+      &copy; 2025 Mapeando. Todos os direitos reservados.
+    </div>
+  </footer>
+
+  <script src="cadastrar.js"></script>
+</body>
+</html>
